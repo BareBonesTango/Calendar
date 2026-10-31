@@ -291,7 +291,7 @@ async function main() {
     const params = new URLSearchParams(location.search);
     const today = Temporal.Now.plainDateISO();
     const start = params.has("start") ? Temporal.PlainDate.from(params.get("start")) : today;
-    const weeks = params.has("weeks") ? +params.get("weeks") : 14;
+    const weeks = params.has("weeks") ? +params.get("weeks") : 5;
     if (!Number.isInteger(weeks) || weeks < 1)
         throw new Error("weeks must be a positive integer");
 
