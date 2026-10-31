@@ -1,0 +1,124 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    margin: 1.5rem;
+}
+
+h1 {
+    font-size: 1.2rem;
+    margin: 0 0 .75rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+#error:empty {
+    display: none;
+}
+
+#error {
+    color: #c33;
+    white-space: pre-wrap;
+    margin: 1rem 0;
+}
+
+.week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+}
+
+
+
+.week {
+    margin-bottom: 4px;
+}
+
+/* mobile: single column filling the entire width */
+body.mobile {
+    margin: .5rem;
+}
+
+body.mobile .week {
+    grid-template-columns: 1fr;
+}
+
+
+
+.CellDate {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-height: 6rem;
+    padding: .3rem .4rem;
+}
+
+.CellDate.today {
+    border-color: #06c;
+    box-shadow: 0 0 0 1px #06c;
+}
+
+.CellDay {
+    font-weight: 600;
+    font-size: .9rem;
+    margin-bottom: .2rem;
+}
+
+.CellDow {
+    float: right;
+    font-weight: 400;
+    opacity: .65;
+}
+
+.Event {
+    font-size: .8rem;
+    border-radius: 4px;
+    padding: 1px 5px;
+    margin: 2px 0;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+
+.EvTitle {
+    font-weight: 600;
+}
+
+
+/* Uses the first character of the Kind field to determine the background color */
+.Kind1 {
+    background: hsl(240, 55%, 42%);
+}
+
+.Kind2 {
+    background: hsl(0, 55%, 42%);
+}
+
+.Kind3 {
+    background: hsl(60, 55%, 42%);
+}
+
+.Kind4 {
+    background: hsl(0, 0%, 42%);
+}
+
+.Kind5 {
+    background: hsl(180, 55%, 42%);
+}
+
+.Kind6 {
+    background: hsl(300, 55%, 42%);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .day {
+        border-color: #555;
+    }
+}

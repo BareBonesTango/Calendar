@@ -1,0 +1,38 @@
+[
+    {
+        "Id": "bbt",
+        "Name": "BareBones Practilonga",
+        "Day": "2026-01-01",
+        "Time": "14:00",
+        "Length": "PT3H30M",
+        "Location": "${Loc:AdelanteStudios}",
+        "Region": "NoMad",
+        "Price": "$10 before 3pm, $15 after",
+        "Links": "<a href='https://www.facebook.com/groups/barebonesmilonga'>${Logo:FB}</a>",
+        "Kind": "1Milonga",
+        "Repeat": "8-14,22-28 * 6",
+        "Music": "DJ TBD - 80% Alternative"
+    },
+    {
+        "Change": "bbt",
+        "Instance": "2026-10-10",
+        "Music": "${DJ:Sean} - 80% Alternative"
+    },
+    {
+        "Change": "bbt",
+        "Instance": "2026-10-24",
+        "Music": "${DJ:Robert} - 80% Alternative"
+    },
+    {
+        "Change": "bbt",
+        "Instance": "2026-11-14",
+        "Day": "2026-11-07",
+        "Music": "${DJ:Sean} - 80% Alternative"
+    },
+    {
+        "Change": "bbt",
+        "Instance": "2026-11-28",
+        "Day": "2026-11-21",
+        "Music": "${DJ:Robert} - 80% Alternative"
+    }
+]
